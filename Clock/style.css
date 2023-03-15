@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One &display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Concert One", cursive;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container img {
+    position: absolute;
+    z-index: 99;
+    width: 35rem;
+    height: 35rem;
+    opacity: 0.3;
+}
+
+.clock {
+    width: 35rem;
+    height: 35rem;
+    background-color: darkblue;
+    position: relative;
+    border-radius: 35px;
+    border: 5px solid rgb(95, 95, 222);
+    box-shadow: 0 3px 8px rgb(95, 95, 222);
+}
+
+.numbers {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.numbers div {
+    position: absolute;
+    font-size: 2.5rem;
+    color: orange;
+    text-shadow: 0.2rem 0.2rem 0.2rem #222;
+}
+
+.twelve {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.numbers .one {
+    top: 4.8rem;
+    left: 70%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.numbers .two {
+    top: 9.8rem;
+    left: 85%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.three {
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.numbers .four {
+    bottom: 8.8rem;
+    left: 85%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.numbers .five {
+    bottom: 4.1rem;
+    left: 70%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.six {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.numbers .seven {
+    bottom: 4.1rem;
+    left: 30%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.numbers .eight {
+    bottom: 9rem;
+    left: 15%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.nine {
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.numbers .ten {
+    left: 4rem;
+    top: 31%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.numbers .eleven {
+    left: 9.7rem;
+    top: 18%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.arrows {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.arrows::before {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: orange;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.5rem #777;
+    z-index: 10;
+}
+
+.arrows div {
+    width: 0.7rem;
+    height: 12rem;
+    background-color: #fff0f5;
+    position: absolute;
+    bottom: 50%;
+    box-shadow: 0.2rem 0.2rem 0.5rem #777;
+    border-radius: 100% 100% 0 0;
+    transform-origin: bottom center;
+}
+
+.arrows .hour {
+    height: 10rem;
+    transform: rotate(360deg);
+}
+
+.arrows .second {
+    background-color: orange;
+    transform: rotate(270deg);
+}
